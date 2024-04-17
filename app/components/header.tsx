@@ -4,15 +4,15 @@ import { FaCartArrowDown } from 'react-icons/fa'
 
 export default function Header() {
   return (
-    <Box bg="blue" height="10vh" color="white" >
-      <Flex alignItems="center" justifyContent="space-between" padding="0px 25px">
-        <Heading>Header</Heading>
-        <IconButton
-            icon={<FaCartArrowDown />}
-            aria-label="Shopping Cart"
-            variant="ghost"
+    <Box height="100px" display="grid" border="1px" borderColor="#8080805e">
+        <Box display="flex" justifyContent="space-between" alignItems="center" padding="0px 150px">
+          <Heading>Header</Heading>
+          <IconButton
+          icon={<FaCartArrowDown />}
+          aria-label='Shopping Cart'
+          bg="none"
           />
-      </Flex>  
+        </Box>
     </Box>
   )
 }
