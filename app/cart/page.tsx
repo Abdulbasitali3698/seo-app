@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Header from '../components/header'
 import { Box, Button, Divider, Heading, Text} from '@chakra-ui/react'
 import { IoArrowForward } from 'react-icons/io5'
 import { IoMdArrowBack } from 'react-icons/io'
+import { CartContext } from '../context'
 
 export default function Cart() {
+    
   return (
    <>
    <Header/>
@@ -20,9 +22,11 @@ export default function Cart() {
                         <Text>Products</Text>
                     </Box>
                     <Box display="flex" flexDirection="row"  gap="60px">
-                        <Text>Price</Text>
+                        <Text>Total Price:</Text>
                         <Text>Quantity</Text>
                         <Text>Remove</Text>
+                    </Box>
+                    <Box>
                     </Box>
                 </Box>
                 <Divider/>
